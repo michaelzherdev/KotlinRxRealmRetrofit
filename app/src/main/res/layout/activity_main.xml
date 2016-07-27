@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        tools:context="com.mzherdev.kotlinrrr.MainActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/userName"
+            tools:text="UserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userImage"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/userLocation"
+            tools:text="User Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userName"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/dateCreated"
+            tools:text="User Created At"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userLocation"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/dateUpdated"
+            tools:text="User Created At"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateCreated"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/publicRepos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dateUpdated"
+            android:layout_centerHorizontal="true" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/publicRepos"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+</layout>
